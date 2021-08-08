@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::post("product/create", [\App\Http\Controllers\ProductController::class,"createProduct"]);
 Route::post("image/upload", [\App\Http\Controllers\ProductController::class,"uploadImage"]);
+Route::get("category/product/{id}", [\App\Http\Controllers\ProductController::class,"categoryProduct"]);
+Route::get("kategorija/cena/{id}", [\App\Http\Controllers\ProductController::class,"categoryPrice"]);
+Route::post("juzer",  [\App\Http\Controllers\UserController::class,"register"]);
+Route::post("login", [\App\Http\Controllers\UserController::class,"Login"]);
